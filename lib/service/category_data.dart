@@ -1,4 +1,4 @@
-import 'package:flutter_app/model/category_model.dart';
+import 'package:studyclubapp/model/category_model.dart';
 
 List<CategoryModel> getCategories() {
   List<CategoryModel> category = [];

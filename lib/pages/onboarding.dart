@@ -1,8 +1,8 @@
 // pages/onboarding.dart
 import 'package:flutter/material.dart';
-import 'package:flutter_app/service/widget_support.dart';
-import 'package:flutter_app/widget/bottom_nav.dart';
 import 'package:lottie/lottie.dart';
+import 'package:studyclubapp/service/widget_support.dart';
+import 'package:studyclubapp/widget/bottom_nav.dart';
 
 class OnboardingState extends StatefulWidget {
   const OnboardingState({super.key});

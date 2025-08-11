@@ -4,6 +4,13 @@ import 'package:studyclubapp/model/category_model.dart';
 import 'package:studyclubapp/model/donut_model.dart';
 import 'package:studyclubapp/model/pizza_model.dart';
 import 'package:studyclubapp/model/ramen_model.dart';
+import 'package:studyclubapp/service/burger_data.dart';
+import 'package:studyclubapp/service/category_data.dart';
+import 'package:studyclubapp/service/donut_data.dart';
+import 'package:studyclubapp/service/pizza_data.dart';
+import 'package:studyclubapp/service/ramen_data.dart';
+import 'package:studyclubapp/service/widget_support.dart';
+import 'package:lottie/lottie.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});

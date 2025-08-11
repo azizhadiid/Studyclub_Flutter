@@ -1,4 +1,4 @@
-import 'package:flutter_app/model/donut_model.dart';
+import 'package:studyclubapp/model/donut_model.dart';
 
 List<DonutModel> getDonut() {
   List<DonutModel> donut = [];

@@ -1,4 +1,4 @@
-import 'package:flutter_app/model/pizza_model.dart';
+import 'package:studyclubapp/model/pizza_model.dart';
 
 List<PizzaModel> getPizza() {
   List<PizzaModel> pizza = [];
