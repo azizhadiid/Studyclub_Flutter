@@ -36,13 +36,33 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
+    void dialog(BuildContext context) {
+      showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+            title: const Text("Berhasil"),
+            content: const Text("data berhasil disimpan"),
+            actions: [
+              TextButton(
+                onPressed: () {
+                  Navigator.pop(context);
+                },
+                child: const Text("OK"),
+              ),
+            ],
+          );
+        },
+      );
+    }
+
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         title: Text(widget.title),
         centerTitle: true,
       ),
-      body: Padding(
+      body: SingleChildScrollView(
         padding: const EdgeInsets.all(20.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
@@ -80,9 +100,40 @@ class _MyHomePageState extends State<MyHomePage> {
                 ],
               ),
             ),
-            Text("Nama", style: TextStyle(fontSize: 35, color: Colors.grey)),
-            Text("Aziz Alhadiid", style: TextStyle(fontSize: 25)),
-            SizedBox(height: 20),
+            SizedBox(height: 10.0),
+            Text("Nama", style: TextStyle(fontSize: 25)),
+            Text(
+              "Aziz Alhadiid",
+              style: TextStyle(fontSize: 20, color: Colors.grey),
+            ),
+            Divider(),
+            SizedBox(height: 10.0),
+            Text("Phone", style: TextStyle(fontSize: 25)),
+            Text(
+              "081366705844",
+              style: TextStyle(fontSize: 20, color: Colors.grey),
+            ),
+            Divider(),
+            SizedBox(height: 10.0),
+            Text("About", style: TextStyle(fontSize: 25)),
+            Text(
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, urna eu tincidunt consectetur, nisi nisl aliquam enim, eget facilisis sem erat nec enim. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Integer euismod, nisi eu.",
+              style: TextStyle(fontSize: 20, color: Colors.grey),
+            ),
+            Divider(),
+            SizedBox(
+              width: double.infinity,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  backgroundColor: const Color.fromARGB(255, 2, 168, 30),
+                ),
+                onPressed: () {
+                  dialog(context);
+                },
+                child: Text("Simpan", style: TextStyle(color: Colors.white)),
+              ),
+            ),
+            SizedBox(height: 20.0),
           ],
         ),
       ),
