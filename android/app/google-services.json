@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "610102116558",
+    "project_id": "fluttercrud-c50fd",
+    "storage_bucket": "fluttercrud-c50fd.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:610102116558:android:3c67591dab3b6ffc08509f",
+        "android_client_info": {
+          "package_name": "com.example.studyclubapp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAyHWnvln05GGdq4U7l5MZk09KEPnIYuKA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
