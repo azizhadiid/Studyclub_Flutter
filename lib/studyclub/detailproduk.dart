@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
+import 'package:studyclubapp/main.dart';
 
 class DetailProdukPage extends StatelessWidget {
   final String nama;
@@ -98,8 +99,16 @@ class DetailProdukPage extends StatelessWidget {
                     width: double.infinity,
                     child: ElevatedButton.icon(
                       onPressed: () {
-                        // Tambahkan logika untuk membeli atau menambahkan ke keranjang
-                        debugPrint('Tombol Beli Sekarang ditekan!');
+                        // Tambahkan produk ke riwayat pembelian
+                        riwayatPembelian.add({
+                          'nama': nama,
+                          'gambar': gambar,
+                          'harga': harga,
+                          'detail': detail,
+                        });
+
+                        // Navigasi ke halaman riwayat beli
+                        Navigator.pushNamed(context, '/riwayat');
                       },
                       icon: const Icon(Icons.shopping_cart),
                       label: const Text('Beli Sekarang'),

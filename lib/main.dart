@@ -2,6 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:studyclubapp/studyclub/detailproduk.dart';
 import 'package:studyclubapp/studyclub/home_apge.dart';
 import 'package:studyclubapp/studyclub/profile_page.dart';
+import 'package:studyclubapp/studyclub/riwayat_page.dart';
+
+// List statis untuk menyimpan riwayat pembelian
+List<Map<String, dynamic>> riwayatPembelian = [];
 
 void main() {
   runApp(const MyApp());
@@ -38,6 +42,7 @@ class MyApp extends StatelessWidget {
             detail: args['detail'],
           );
         },
+        '/riwayat': (context) => const RiwayatBeli(),
       },
     );
   }
